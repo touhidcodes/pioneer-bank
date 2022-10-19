@@ -7,3 +7,21 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(176, 176, 176);
 }
+#transaction-area {
+  display: none;
+}
+.card {
+  margin: 0 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.deposite {
+  background-color: slateblue;
+}
+.withdraw {
+  background-color: lightsalmon;
+}
+.balance {
+  background-color: orange;
+}

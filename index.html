@@ -13,6 +13,7 @@
     <title>Pioneer Bank</title>
   </head>
   <body>
+    <!-- Login Area -->
     <div id="login-area">
       <h1 class="text-center">Welcome To Pioneer Bank</h1>
       <div id="submit-area">
@@ -29,10 +30,52 @@
         <button id="login" class="btn btn-success">Enter</button>
       </div>
     </div>
+    <!-- Transaction Area -->
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposite card">
+            <h4>Deposit</h5>
+            <h2>$ 0</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw card">
+            <h4>Withdraw</h5>
+            <h2>$ 0</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance card">
+            <h4>Balance</h5>
+            <h2>$ 1240</h2>
+          </div>
+        </div>
+      </div>
+    <!-- Deposit & Withdraw -->
+         <div class="row">
+            <div class="col-md-6">
+                <div id="submit-area">
+                    <h4 class="p-2">Deposit</h4>
+                    <input type="text" name="" class="form-control" id="" placeholder="$ amount you want to deposit"> <br>
+                    <button class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="submit-area">
+                    <h4 class="p-2">Withdraw</h4>
+                    <input type="text" name="" class="form-control" id="" placeholder="$ amount you want to withdraw"> <br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div> 
+            </div>
+         </div>
+    </div>
 
     <script>
+        // login button event handler
       document.getElementById("login").addEventListener("click", function () {
         document.getElementById("login-area").style.display = "none";
+        document.getElementById("transaction-area").style.display = "block";
       });
     </script>
   </body>
